@@ -74,8 +74,9 @@ newTrial("instructions" ,
 Template("sentences.csv", row =>
     newTrial("experiment",
 
-        newText("sentence", row.Sentence)
+        newController("AcceptabilityJudgment", row.Sentence)
             .print()
+            .log()
             .wait()
         ,
         newScale(7)
