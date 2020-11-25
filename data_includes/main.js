@@ -67,12 +67,19 @@ newTrial("instructions" ,
 Template("sentences.csv", row =>
     newTrial("experiment",
 
-        newController("AcceptabilityJudgment", {s: row.Sentence, q: row.Question, as: ["Yes", "No"]})
+        newText("sentence", row.Sentence)
+            .css("font-family", "Open Sans")
             .print()
             .log()
-            .wait()
         ,
-        // newScale(7)        ,
+        newScale("judgement", "yes", "no")
+            .settings.radio()
+            .settings.labelsPosition("bottom")
+            .settings.center()
+            .print()
+            .settings.log()
+            .wait("")
+        ,
         newTimer(500)
             .start()
             .wait()
@@ -80,6 +87,7 @@ Template("sentences.csv", row =>
         // logs additional variables in sentence file (e.g., Fun)
         .log("Id", row.Id)
         .log("sentence", row.Sentence)
+        //.log("judgement")
     ,
     newTrial("break",
 
