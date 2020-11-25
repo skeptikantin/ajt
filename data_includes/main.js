@@ -10,8 +10,8 @@ PennController.DebugOff();
 // Then comes the intermission
 // The actual experiment presents the sentences randomly, with a break after N sentences.
 // After that, send the results and finally show the trial labeled 'bye'.
-Sequence("intro", "instructions", "training", "intermission", sepWithN( "break" , randomize("experiment") , 4), SendResults(), "goodbye")
-
+//Sequence("intro", "instructions", "training", "intermission", sepWithN( "break" , randomize("experiment") , 4), SendResults(), "goodbye")
+Sequence("intro", "experiment", SendResults(), "goodbye")
 
 // What is in Header happens at the beginning of every single trial
 Header(
@@ -71,61 +71,15 @@ newTrial("instructions" ,
         .wait()
 ) // instructions
 
-Template("training.csv", row =>
-    newTrial("training",
-
-        newController("Maze", {s: row.Sentence, a: row.Distractor})
-            .css("font-size", "1.5em")
-            .css("font-family", "Verdana")
-            .print()
-            .log()
-            .wait()
-            .remove()
-            .test.passed()
-            .failure(newText("<br/>oops!").css("font-size", "1.5em").css("color", "red").print())
-            .success(newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
-
-        ,
-        newTimer(500).start().wait()
-    )
-) // defines template for the main experiment
-
-newTrial("intermission" ,
-
-    newText("<p>Well done, you should be good to go.<br/>" +
-        "Remember: try to be as quick and as accurate as possible.</p>" +
-        "<p>The task is fun, but demanding, so there<br/>" +
-        "will be a break every 5 sentences.<br/></p>")
-        .css("font-size", "1.5em")
-        .css("font-family", "Verdana")
-        .center()
-        .print()
-    ,
-    newText("<p>Click OK when you are ready to proceed to the main experiment.</p>")
-        .css("font-size", "1em")
-        .css("font-family", "Verdana")
-        .center()
-        .print()
-    ,
-    newButton("OK")
-        .size(200)
-        .center()
-        .print()
-        .wait()
-) // instructions
-
 Template("sentences.csv", row =>
     newTrial("experiment",
 
-        newController("Maze", {s: row.Sentence, a: row.Distractor})
-            .css("font-size", "1.5em")
-            .css("font-family", "Verdana")
+        newText("sentence", row.Sentence)
             .print()
-            .log()
             .wait()
-            .remove()
-            .test.passed()
-            .failure(newText("oops!").print())
+        ,
+        newScale(7)
+
         ,
         newTimer(500)
             .start()
@@ -133,8 +87,7 @@ Template("sentences.csv", row =>
     )
         // logs additional variables in sentence file (e.g., Fun)
         .log("Id", row.Id)
-        .log("Group", row.Group)
-        .log("Condition", row.Condition)
+        .log("sentence", row.Sentence)
     ,
     newTrial("break",
 
