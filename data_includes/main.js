@@ -36,11 +36,6 @@ newTrial( "intro" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("Welcome to the A-maze demo.")
-        .css("font-size", "1.5em")
-        .center()
-        .print()
-    ,
     newButton("OK")
         .size(100)
         .center()
@@ -72,14 +67,12 @@ newTrial("instructions" ,
 Template("sentences.csv", row =>
     newTrial("experiment",
 
-        newController("AcceptabilityJudgment", row.Sentence)
+        newController("AcceptabilityJudgment", {s: row.Sentence, q: row.Question, as: ["Yes", "No"]})
             .print()
             .log()
             .wait()
         ,
-        newScale(7)
-
-        ,
+        // newScale(7)        ,
         newTimer(500)
             .start()
             .wait()
