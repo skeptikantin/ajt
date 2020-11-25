@@ -3,7 +3,7 @@
 // https://www.pcibex.net/documentation/
 
 PennController.ResetPrefix(null) // Shorten command names (keep this line here)
-PennController.DebugOff();
+//PennController.DebugOff();
 
 
 // Show the 'intro' trial first, then the training items in random order
@@ -46,8 +46,6 @@ newTrial( "intro" ,
         .center()
         .print()
         .wait()
-    ,
-    fullscreen()
 ) // intro message
 
 newTrial("instructions" ,
