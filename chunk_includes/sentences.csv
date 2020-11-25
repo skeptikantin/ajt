@@ -1,4 +1,4 @@
-﻿Id,Type,Sentence
-1,1,I'm doing good.
-2,1,This is nice.
-3,2,Colorless green ideas sleep furiously.
+﻿Id,Type,Sentence,Question
+1,1,I'm doing good.,How acceptable is this sentence?
+2,1,This is nice.,How acceptable is this sentence?
+3,2,Colorless green ideas sleep furiously.,How acceptable is this sentence?
