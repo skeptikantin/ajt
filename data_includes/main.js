@@ -48,7 +48,6 @@ newTrial( "intro" ,
     newText("<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
         "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
         "<strong>Risks:</strong> There are no risks involved.<br/>"+
-        "<strong>Equipment:</strong> I am participating from a device with a <strong>physical keyboard</strong>.<br/>"+
         "<strong>Environment:</strong> I participate from a quiet environment and can work uninterrupted.</p>")
         .css("font-family", "Verdana")
         .print()
@@ -68,12 +67,12 @@ newTrial( "intro" ,
 newTrial("instructions" ,
 
     newText("<p>Your task is to judge sentences, one sentence at a time.<br/>"+
-        "Some of them will make make sense, some will not.</p>"+
-        "<p>Your task is to decide whether it makes sense or not.<br/>" +
-        "More specifically you have to judge if the bold word goes with the sentence or not.</p>" +
+        "Some of them will make sense, some will make less or no sense.</p>"+
+        "<p>Your task is to decide whether it makes sense or not,<br/>" +
+        "that is, if the bold word goes with the sentence or not.</p>" +
         "<p>Select <strong>YES</strong>, if sentence makes sense, and <strong>NO</strong> if it doesn't.</p>" +
         "<p>Please try to be as accurate and as fast as possible.</p>" +
-        "<p>There will be a training phase with feedback to get you used to the task.</p>")
+        "<p>We will start with 3 training sentences to illustrate the task.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -82,7 +81,7 @@ newTrial("instructions" ,
         .print()
     ,
     newButton("OK")
-        .size(100)
+        .size(50)
         .center()
         .print()
         .wait()
@@ -137,7 +136,7 @@ newTrial("intermission",
         .print()
     ,
     newButton("OK")
-        .size(100)
+        .size(50)
         .center()
         .print()
         .wait()
@@ -194,6 +193,11 @@ newTrial("debrief",
         .css("font-family", "Verdana")
         .print()
     ,
+    newText("<p>Before you go, would you mind providing us with feedback?<br/>" +
+        "This information is voluntary, but will help us with the evaluation of the results.</p>")
+        .css("font-family", "Verdana")
+        .print()
+    ,
     newText("<p>What do you think the experiment was about?</p>")
         .css("font-family", "Verdana")
         .print()
@@ -212,7 +216,6 @@ newTrial("debrief",
     ,
     newButton("send", "Send results & proceed to verification link")
         .size(300)
-        .center()
         .print()
         .wait()
 )
@@ -221,15 +224,16 @@ SendResults("send") // send results to server before good-bye message
 
 newTrial("goodbye",
     newText("<p>Thank you very much for your time and effort!</p>")
-        .css("font-size", "1.5em")
+        .css("font-size", "1.2em")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
-    newText("<a href='https://www.sfla.ch/'>Click here to validate your participation.</a>")
+    newText("<strong><a href='https://www.sfla.ch/'>Click here to return to Prolific to validate your participation.</a></strong>")
         .css("font-size", "1em")
-        .css("font-family", "Verdana")
-        .center()
+        .print()
+    ,
+    newText("<p><br/>You can contact the corresponding researcher <a href='https://www.sfla.ch/' target='_blank'>here</a> (opens new tab).</p>")
+        .css("font-size", ".8em")
         .print()
     ,
     newButton("void")
