@@ -218,6 +218,16 @@ newTrial("debrief",
         .print()
         .log()
     ,
+    newText("<p>Did you read the sentences out lout?</p>")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newScale("read", "yes", "sometimes", "no", "can't remember", "rather not say")
+        .css("font-family", "Verdana")
+        .settings.vertical()
+        .print()
+        .log()
+    ,
     newText("<p> </p>")
         .css("font-family", "Verdana")
         .print()
