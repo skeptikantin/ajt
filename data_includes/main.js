@@ -104,7 +104,6 @@ Template("training.csv", row =>
                 .settings.radio()
                 .settings.labelsPosition("bottom")
                 .settings.center()
-                .css("margin-top", "2em")
                 .print()
                 .settings.log()
                 .wait("")

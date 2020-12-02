@@ -12,9 +12,9 @@ p {
     font-family: "Verdana", "Arial";
 }
 
-.PennController-Scale .option {
+.PennController-judgement .option {
     margin: 0em 1em;
-    /* margin-top: 2em; */
+    margin-top: 2em;
     /* color: darkgrey; */
     font-size: 0.8em;
 }
