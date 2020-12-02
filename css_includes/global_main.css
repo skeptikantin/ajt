@@ -3,9 +3,9 @@ body {
     background-color: white;
     margin-left: 0;
     /* default was 5em*/
-    margin-top: 2em;
+    margin-top: 5em;
     margin-bottom: 5em;
-    font-family: "Open Sans", "Verdana";
+    font-family: "Verdana", "Arial";
     vertical-align: middle;
 }
 .PennController-Scale .option {
