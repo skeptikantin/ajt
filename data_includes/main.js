@@ -126,7 +126,9 @@ newTrial("intermission",
 
     newText("<p>Well done, you should be good to go.<br/>" +
         "Remember: try to be quick <strong>and</strong> accurate.</p>" +
-        "<p>You are now going to judge 42 sentences.<br/>" +
+        "<p>Some are very clear and some are more difficult to judge.<br/>"+
+        "(Very clear ones may serve as attention checkers.)</p>" +
+        "<p>You are going to judge 42 sentences.<br/>" +
         "There will be a designated break every 14 sentences, if you want.<br/></p>")
         .css("font-family", "Verdana")
         .print()
@@ -173,6 +175,7 @@ Template("main.csv", row =>
     )
         // logs additional variables in sentence file (e.g., Fun)
         .log("Id", row.Id)
+        .log("Group", row.Group)
         .log("Sentence", row.Sentence)
         .log("Target", row.Target)
         .log("Condition", row.Condition)
