@@ -3,13 +3,14 @@ body {
     background-color: white;
     margin-left: 0;
     /* default was 5em*/
-    margin-top: 10em;
+    margin-top: 2em;
+    margin-bottom: 5em;
     font-family: "Open Sans", "Verdana";
     vertical-align: middle;
 }
 .PennController-Scale .option {
     margin: 0em 1em;
-    margin-top: 5em;
+    margin-top: 2em;
 }
 .lindent { margin-left: 5em; }
 .sending-results {
