@@ -1,7 +1,7 @@
 ﻿Id,Sentence,Target,Item,Corr,Condition,Group
-1,They signed the <strong>piece</strong> treaty.,piece,peace,no,train,A
-2,I crashed my <strong>new</strong> car yesterday. ,new,new ,yes,train,A
-3,The <strong>where</strong> house was mostly empty. ,where ,ware,no,train,A
-1,They signed the <strong>piece</strong> treaty.,piece,peace,no,train,B
-2,I crashed my <strong>new</strong> car yesterday. ,new,new ,yes,train,B
-3,The <strong>where</strong> house was mostly empty. ,where ,ware,no,train,B
+1,They signed the <strong>piece</strong> treaty.,piece,peace,no,train,
+2,I crashed my <strong>new</strong> car yesterday. ,new,new ,yes,train,
+3,The <strong>where</strong> house was mostly empty. ,where ,ware,no,train,
+1,They signed the <strong>piece</strong> treaty.,piece,peace,no,train,
+2,I crashed my <strong>new</strong> car yesterday. ,new,new ,yes,train,
+3,The <strong>where</strong> house was mostly empty. ,where ,ware,no,train,
