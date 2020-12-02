@@ -14,7 +14,7 @@ p {
 
 .PennController-Scale .option {
     margin: 0em 1em;
-    margin-top: 2em;
+    /* margin-top: 2em; */
     /* color: darkgrey; */
     font-size: 0.8em;
 }
