@@ -15,7 +15,7 @@ p {
 .PennController-Scale .option {
     margin: 0em 1em;
     margin-top: 2em;
-    color: darkgrey;
+    /* color: darkgrey; */
     font-size: 0.8em;
 }
 .lindent { margin-left: 5em; }
@@ -41,14 +41,14 @@ p.progress-text {
     font-style: italic;
     font-size: 0.7em;
     font-family: "Verdana";
-    color: lightgrey;
+    color: grey;
 }
 p.practice-box {
     height: 0.5em;
     padding-bottom: 1em;
     font-size: small;
     text-align: center;
-    color: darkgrey;
+    color: lightgrey;
 }
 span.retry {
     color: blue;
