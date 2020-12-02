@@ -68,10 +68,10 @@ newTrial("instructions" ,
 
     newText("<p>Your task is to judge sentences, one sentence at a time.<br/>"+
         "Some of them will make sense, some will make less or no sense.</p>"+
-        "<p>Your task is to decide whether it makes sense or not,<br/>" +
+        "<p>Your task is to decide whether the sentence on screen makes sense or not,<br/>" +
         "that is, if the bold word goes with the sentence or not.</p>" +
         "<p>Select <strong>YES</strong>, if sentence makes sense, and <strong>NO</strong> if it doesn't.</p>" +
-        "<p>Please try to be as accurate and as fast as possible.</p>" +
+        "<p>Please try to be both accurate and quick.</p>" +
         "<p>We will start with 3 training sentences to illustrate the task.</p>")
         .css("font-family", "Verdana")
         .print()
@@ -90,6 +90,10 @@ newTrial("instructions" ,
 Template("training.csv", row =>
         newTrial("training",
 
+            newText("<p> </p>")
+                .css("font-family", "Verdana")
+                .print()
+            ,
             newText("Sentence", row.Sentence)
                 .css("font-size", "1.2em")
                 .css("font-family", "Verdana")
@@ -145,6 +149,10 @@ newTrial("intermission",
 Template("main.csv", row =>
     newTrial("experiment",
 
+        newText("<p> </p>")
+            .css("font-family", "Verdana")
+            .print()
+        ,
         newText("Sentence", row.Sentence)
             .css("font-size", "1.2em")
             .css("font-family", "Verdana")
