@@ -71,7 +71,7 @@ Template("sentences.csv", row =>
     newTrial("experiment",
 
         newText("sentence", row.Sentence)
-            .css("font-size", "2em")
+            .css("font-size", "1.2em")
             .css("font-family", "Verdana")
             .print()
             .log()

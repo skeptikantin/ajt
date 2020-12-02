@@ -9,6 +9,7 @@ body {
 }
 .PennController-Scale .option {
     margin: 0em 1em;
+    margin-top: 5em;
 }
 .lindent { margin-left: 5em; }
 .sending-results {
