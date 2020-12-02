@@ -56,30 +56,30 @@
 55,A fish swims by moving its <strong>tale</strong>.,tail,yes,no,no,apparent.sense,B
 56,The <strong>sun</strong> immediately noticed the mess.,son,yes,no,no,apparent.sense,B
 57,He performed an evil <strong>dead</strong>. ,deed,yes,no,no,non.sense,A
-58,They found him <strong>deed</strong> on the floor. ,dead,yes,no,no,non.sense,A
+58,They found him <strong>deed</strong> on the floor. ,dead,yes,no,no,non.sense,B
 59,They had no <strong>cone</strong> for the slot machine.,coin,yes,no,no,non.sense,A
-60,She wanted an ice cream <strong>coin</strong>. ,cone,yes,no,no,non.sense,A
+60,She wanted an ice cream <strong>coin</strong>. ,cone,yes,no,no,non.sense,B
 61,I closed the window and drew the <strong>bout</strong>. ,bolt,yes,no,no,non.sense,A
-62,He had <strong>bolts</strong> of fever in his infancy.,bout,yes,no,no,non.sense,A
+62,He had <strong>bolts</strong> of fever in his infancy.,bout,yes,no,no,non.sense,B
 63,The cherry <strong>pea</strong> smelled amazing.,pie,yes,no,no,non.sense,A
-64,They were two <strong>pies</strong> in a pot. ,pea,yes,no,no,non.sense,A
+64,They were two <strong>pies</strong> in a pot. ,pea,yes,no,no,non.sense,B
 65,She was frequently <strong>kill</strong> in her infancy. ,ill,yes,no,no,non.sense,A
-66,He was told to <strong>ill</strong> her. ,kill,yes,no,no,non.sense,A
+66,He was told to <strong>ill</strong> her. ,kill,yes,no,no,non.sense,B
 67,They have to inform the next of <strong>in</strong>. ,kin,yes,no,no,non.sense,A
-68,The ticket was not <strong>kin</strong> her purse. ,in,yes,no,no,non.sense,A
-69,The <strong>no</strong> phone she bought was deffective. ,new,yes,no,no,non.sense,A
-70,There was <strong>new</strong> trace of them. ,no,yes,no,no,non.sense,A
-71,He asked where they <strong>here</strong>.,are,yes,no,no,non.sense,B
+68,The ticket was not <strong>kin</strong> her purse. ,in,yes,no,no,non.sense,B
+69,The <strong>no</strong> phone she bought was defective. ,new,yes,no,no,non.sense,A
+70,There was <strong>new</strong> trace of them. ,no,yes,no,no,non.sense,B
+71,He asked where they <strong>here</strong>.,are,yes,no,no,non.sense,A
 72,They told him to come over <strong>are</strong>. ,here,yes,no,no,non.sense,B
-73,He used a <strong>clever</strong> to chop the meat. ,cleaver,yes,no,no,non.sense,B
+73,He used a <strong>clever</strong> to chop the meat. ,cleaver,yes,no,no,non.sense,A
 74,Nerds are often portrayed as <strong>cleaver</strong> on TV. ,clever,yes,no,no,non.sense,B
-75,He had a very good sense of <strong>paste</strong>.,taste,yes,no,no,non.sense,B
+75,He had a very good sense of <strong>paste</strong>.,taste,yes,no,no,non.sense,A
 76,They had to <strong>taste</strong> the wallpaper to the wall.,paste,yes,no,no,non.sense,B
-77,She loved reading a <strong>look</strong> with friends. ,book,yes,no,no,non.sense,B
+77,She loved reading a <strong>look</strong> with friends. ,book,yes,no,no,non.sense,A
 78,He gave her an annoyed <strong>book</strong> and left.,look,yes,no,no,non.sense,B
-79,They feared they would die from the <strong>sheet</strong>. ,heat ,yes,no,no,non.sense,B
+79,They feared they would die from the <strong>sheet</strong>. ,heat ,yes,no,no,non.sense,A
 80,They wrote on a <strong>heat</strong> of paper.,sheet,yes,no,no,non.sense,B
-81,Their first date was a romantic <strong>boot</strong> ride. ,boat,yes,no,no,non.sense,B
+81,Their first date was a romantic <strong>boot</strong> ride. ,boat,yes,no,no,non.sense,A
 82,You should wear your <strong>boats</strong> and rain coat. ,boot,yes,no,no,non.sense,B
-83,The <strong>broad</strong> was very narrow. ,road,yes,no,no,non.sense,B
+83,The <strong>broad</strong> was very narrow. ,road,yes,no,no,non.sense,A
 84,We walked down a <strong>road</strong> tree-lined avenue.,broad,yes,no,no,non.sense,B
