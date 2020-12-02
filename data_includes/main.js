@@ -25,15 +25,29 @@ Header(
         .start()
         .wait()
 )
-.log( "Name" , getVar("ParticipantName") )
+//.log( "Name" , getVar("ParticipantName") )
 // This log command adds a column reporting the participant's name to every line saved to the results
+.log("ParticipantID", PennController.GetURLParameter("participant") );
 
 newTrial( "intro" ,
 
+    newText("<p>Welcome!</p>")
+        .css("font-size", "1.2em")
+        .print()
+    ,
+    newText("<p><strong>Informed Consent</strong>:</p>")
+        .css("font-family", "Verdana")
+        .print()
+    ,
     newText("<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
         "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
         "<strong>Risks:</strong> There are no risks involved.<br/>"+
-        "<strong>Equipment:</strong> I am participating from a device with a <strong>physical keyboard</strong>.</p>")
+        "<strong>Equipment:</strong> I am participating from a device with a <strong>physical keyboard</strong>.<br/>"+
+        "<strong>Environment:</strong> I participate from a quiet environment and can work uninterrupted.</p>")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newText("<p>By clicking OK, you agree to the above. Let's get started!</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -42,22 +56,21 @@ newTrial( "intro" ,
         .center()
         .print()
         .wait()
+
 ) // intro message
 
 newTrial("instructions" ,
 
-    newText("<p>In the following you will be presented with a number of sentences. You will read the sentence and decide<br/>" +
-        "whether it makes sense or not. More specifically you have to judge if the bold word goes with the sentence or not.</p>" +
+    newText("<p>In the following you will be presented with a number of sentences. Some of them will make more sense than others.</p>" +
+        "<p>Your task is to decide whether it makes sense or not. More specifically you have to judge if the bold word goes with the sentence or not.</p>" +
         "<p>To make your selection, use the <strong>LEFT</strong> and <strong>RIGHT</strong> arrow keys.<br/>" +
         "Please try to be as accurate and as fast as possible.<br/>" +
         "There will be a training phase with feedback to get you used to the task.</p>")
         .css("font-family", "Verdana")
-        // .center()
         .print()
     ,
     newText("<p>Click OK when you are ready to begin.</p>")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
     newButton("OK")

@@ -8,6 +8,10 @@ body {
     font-family: "Verdana", "Arial";
     vertical-align: middle;
 }
+p {
+    font-family: "Verdana", "Arial";
+}
+
 .PennController-Scale .option {
     margin: 0em 1em;
     margin-top: 2em;
