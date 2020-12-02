@@ -15,7 +15,7 @@ p {
 .PennController-Scale .option {
     margin: 0em 1em;
     margin-top: 2em;
-    color: grey;
+    color: darkgrey;
     font-size: 0.8em;
 }
 .lindent { margin-left: 5em; }
@@ -28,6 +28,8 @@ div.bar-container {
     /* border-color: #9ea4b1; */
     border-color: grey;
     background-color: white;
+    height: 0.5em;
+    margin-bottom: 2em;
 }
 div.bar {
     background-color: grey;
@@ -39,7 +41,7 @@ p.progress-text {
     font-style: italic;
     font-size: 0.7em;
     font-family: "Verdana";
-    color: grey;
+    color: lightgrey;
 }
 p.practice-box {
     height: 0.5em;
