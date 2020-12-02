@@ -41,11 +41,8 @@ newTrial( "intro" ,
         .css("font-size", "1.2em")
         .print()
     ,
-    newText("<p><strong>Informed Consent</strong>:</p>")
-        .css("font-family", "Verdana")
-        .print()
-    ,
-    newText("<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
+    newText("<p><strong>Informed Consent</strong>:</p>"+
+        "<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
         "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
         "<strong>Risks:</strong> There are no risks involved.<br/>"+
         "<strong>Environment:</strong> I participate from a quiet environment and can work uninterrupted.</p>")
@@ -66,8 +63,12 @@ newTrial( "intro" ,
 
 newTrial("instructions" ,
 
-    newText("<p>Your task is to judge sentences, one sentence at a time.<br/>"+
-        "Some of them will make sense, some will make less or no sense.</p>"+
+    newText("<p><strong>The judgement task</strong></p>")
+        .css("font-size", "1.2em")
+        .print()
+    ,
+    newText("<p>Your job is to judge 45 sentences, one sentence at a time.<br/>"+
+        "Some of them will make sense, some will make less or no sense at all.</p>"+
         "<p>Your task is to decide whether the sentence on screen makes sense or not,<br/>" +
         "that is, if the bold word goes with the sentence or not.</p>" +
         "<p>Select <strong>YES</strong>, if sentence makes sense, and <strong>NO</strong> if it doesn't.</p>" +
@@ -114,6 +115,7 @@ Template("training.csv", row =>
         )
             // logs additional variables in sentence file (e.g., Fun)
             .log("Id", row.Id)
+            .log("Group", row.Group)
             .log("Sentence", row.Sentence)
             .log("Target", row.Target)
             .log("Condition", row.Condition)
@@ -205,11 +207,11 @@ newTrial("debrief",
         .print()
     ,
     newText("<p>Before you go, would you mind providing us with feedback?<br/>" +
-        "This information is voluntary, but will help us with the evaluation of the results.</p>")
+        "This is voluntary, but will help us with the analysis.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>What do you think the experiment was about?</p>")
+    newText("<p><strong>What do you think the experiment was about?</strong></p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -221,7 +223,7 @@ newTrial("debrief",
         .print()
         .log()
     ,
-    newText("<p>Did you read the sentences out lout?</p>")
+    newText("<p><strong>Did you read the sentences out lout?</strong></p>")
         .css("font-family", "Verdana")
         .print()
     ,
