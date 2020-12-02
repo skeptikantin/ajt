@@ -1,0 +1,85 @@
+﻿Id,Sentence,Target,Left,Right,Corr,Condition,Group
+1,Her favorite <strong>flower</strong> is daffodils. ,flower,yes,no,yes,real.sense,A
+2,It was a <strong>piece</strong> of cake.,piece,yes,no,yes,real.sense,A
+3,I was unsure <strong>whether</strong> it would work.,whether,yes,no,yes,real.sense,A
+4,A beautiful place to <strong>raise</strong> children.,raise,yes,no,yes,real.sense,A
+5,This used car is for <strong>sale</strong>. ,sale,yes,no,yes,real.sense,A
+6,A <strong>deer</strong> ran across the street,deer,yes,no,yes,real.sense,A
+7,You never <strong>seem</strong> to study.,seem,yes,no,yes,real.sense,A
+8,Friday is my favorite day of the <strong>week</strong>.,week,yes,no,yes,real.sense,A
+9,There is a child on <strong>board</strong>. ,board,yes,no,yes,real.sense,A
+10,I <strong>weigh</strong> nearly twice as much as you. ,weigh,yes,no,yes,real.sense,A
+11,What a <strong>waste</strong> of time. ,waste,yes,no,yes,real.sense,A
+12,I like <strong>meat</strong> better than fish. ,meat,yes,no,yes,real.sense,A
+13,A fish swims by moving its <strong>tail</strong>.,tail,yes,no,yes,real.sense,A
+14,The <strong>son</strong> immediately noticed the mess. ,son,yes,no,yes,real.sense,A
+15,At the edge of the <strong>road</strong> stood a tree.,road,yes,no,yes,real.sense,B
+16,The sky was cloudless and <strong>blue</strong>.,blue,yes,no,yes,real.sense,B
+17,She was chopping <strong>wood</strong>.,wood,yes,no,yes,real.sense,B
+18,His application was <strong>scent</strong> a week ago. ,sent,yes,no,yes,real.sense,B
+19,His favorite <strong>pair</strong> of jeans. ,pair,yes,no,yes,real.sense,B
+20,Their opinions carry <strong>weight</strong>. ,weight,yes,no,yes,real.sense,B
+21,The <strong>hole</strong> in the roof has gotten bigger. ,hole,yes,no,yes,real.sense,B
+22,Give yourself a <strong>break</strong> and get some rest. ,break,yes,no,yes,real.sense,B
+23,They <strong>sell</strong> a lot of those every morning. ,sell,yes,no,yes,real.sense,B
+24,He <strong>threw</strong> her a sharp look.,threw,yes,no,yes,real.sense,B
+25,They studied the <strong>male</strong> anatomy in Biology class.,male,yes,no,yes,real.sense,B
+26,The <strong>bear</strong> was hungry,bear,yes,no,yes,real.sense,B
+27,His face looked <strong>pale</strong>. ,pale,yes,no,yes,real.sense,B
+28,I had a minor <strong>role</strong> in the play. ,role,yes,no,yes,real.sense,B
+29,At the edge of the <strong>rode</strong> stood a tree.,road,yes,no,no,apparent.sense,A
+30,The sky was cloudless and <strong>blew</strong>.,blue,yes,no,no,apparent.sense,A
+31,She was chopping <strong>would</strong>.,wood,yes,no,no,apparent.sense,A
+32,His application was <strong>scent</strong> a week ago. ,sent,yes,no,no,apparent.sense,A
+33,His favorite <strong>pear</strong> of jeans. ,pair,yes,no,no,apparent.sense,A
+34,Their opinions carry <strong>wait</strong>. ,weight,yes,no,no,apparent.sense,A
+35,The <strong>whole</strong> in the roof has gotten bigger. ,hole,yes,no,no,apparent.sense,A
+36,Give yourself a <strong>brake</strong> and get some rest. ,break,yes,no,no,apparent.sense,A
+37,They <strong>cell</strong> a lot of those every morning. ,sell,yes,no,no,apparent.sense,A
+38,He <strong>through</strong> her a sharp look.,threw,yes,no,no,apparent.sense,A
+39,They studied the <strong>mail</strong> anatomy in Biology class.,male,yes,no,no,apparent.sense,A
+40,The <strong>bare</strong> was hungry,bear,yes,no,no,apparent.sense,A
+41,His face looked <strong>pail</strong>. ,pale,yes,no,no,apparent.sense,A
+42,I had a minor <strong>roll</strong> in the play. ,role,yes,no,no,apparent.sense,A
+43,Her favorite <strong>flour</strong> is daffodils.,flower,yes,no,no,apparent.sense,B
+44,It was a <strong>peace</strong> of cake.,piece,yes,no,no,apparent.sense,B
+45,I was unsure <strong>weather</strong> it would work.,whether,yes,no,no,apparent.sense,B
+46,A beautiful place to <strong>raze</strong> children.,raise,yes,no,no,apparent.sense,B
+47,This used car is for <strong>sail</strong>. ,sale,yes,no,no,apparent.sense,B
+48,A <strong>dear</strong> ran across the street,deer,yes,no,no,apparent.sense,B
+49,You never <strong>seam</strong> to study.,seem,yes,no,no,apparent.sense,B
+50,Friday is my favorite day of the <strong>weak</strong>.,week,yes,no,no,apparent.sense,B
+51,There is a child on <strong>bored</strong>. ,board,yes,no,no,apparent.sense,B
+52,I <strong>way</strong> nearly twice as much as you. ,weigh,yes,no,no,apparent.sense,B
+53,What a <strong>waist</strong> of time. ,waste,yes,no,no,apparent.sense,B
+54,I like <strong>meet</strong> better than fish. ,meat,yes,no,no,apparent.sense,B
+55,A fish swims by moving its <strong>tale</strong>.,tail,yes,no,no,apparent.sense,B
+56,The <strong>sun</strong> immediately noticed the mess.,son,yes,no,no,apparent.sense,B
+57,He performed an evil <strong>dead</strong>. ,deed,yes,no,no,non.sense,A
+58,They found him <strong>deed</strong> on the floor. ,dead,yes,no,no,non.sense,A
+59,They had no <strong>cone</strong> for the slot machine.,coin,yes,no,no,non.sense,A
+60,She wanted an ice cream <strong>coin</strong>. ,cone,yes,no,no,non.sense,A
+61,I closed the window and drew the <strong>bout</strong>. ,bolt,yes,no,no,non.sense,A
+62,He had <strong>bolts</strong> of fever in his infancy.,bout,yes,no,no,non.sense,A
+63,The cherry <strong>pea</strong> smelled amazing.,pie,yes,no,no,non.sense,A
+64,They were two <strong>pies</strong> in a pot. ,pea,yes,no,no,non.sense,A
+65,She was frequently <strong>kill</strong> in her infancy. ,ill,yes,no,no,non.sense,A
+66,He was told to <strong>ill</strong> her. ,kill,yes,no,no,non.sense,A
+67,They have to inform the next of <strong>in</strong>. ,kin,yes,no,no,non.sense,A
+68,The ticket was not <strong>kin</strong> her purse. ,in,yes,no,no,non.sense,A
+69,The <strong>no</strong> phone she bought was deffective. ,new,yes,no,no,non.sense,A
+70,There was <strong>new</strong> trace of them. ,no,yes,no,no,non.sense,A
+71,He asked where they <strong>here</strong>.,are,yes,no,no,non.sense,B
+72,They told him to come over <strong>are</strong>. ,here,yes,no,no,non.sense,B
+73,He used a <strong>clever</strong> to chop the meat. ,cleaver,yes,no,no,non.sense,B
+74,Nerds are often portrayed as <strong>cleaver</strong> on TV. ,clever,yes,no,no,non.sense,B
+75,He had a very good sense of <strong>paste</strong>.,taste,yes,no,no,non.sense,B
+76,They had to <strong>taste</strong> the wallpaper to the wall.,paste,yes,no,no,non.sense,B
+77,She loved reading a <strong>look</strong> with friends. ,book,yes,no,no,non.sense,B
+78,He gave her an annoyed <strong>book</strong> and left.,look,yes,no,no,non.sense,B
+79,They feared they would die from the <strong>sheet</strong>. ,heat ,yes,no,no,non.sense,B
+80,They wrote on a <strong>heat</strong> of paper.,sheet,yes,no,no,non.sense,B
+81,Their first date was a romantic <strong>boot</strong> ride. ,boat,yes,no,no,non.sense,B
+82,You should wear your <strong>boats</strong> and rain coat. ,boot,yes,no,no,non.sense,B
+83,The <strong>broad</strong> was very narrow. ,road,yes,no,no,non.sense,B
+84,We walked down a <strong>road</strong> tree-lined avenue.,broad,yes,no,no,non.sense,B

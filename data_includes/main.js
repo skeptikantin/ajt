@@ -80,16 +80,16 @@ newTrial("instructions" ,
         .wait()
 ) // instructions
 
-Template("sentences.csv", row =>
+Template("main.csv", row =>
     newTrial("experiment",
 
-        newText("sentence", row.Sentence)
+        newText("Sentence", row.Sentence)
             .css("font-size", "1.2em")
             .css("font-family", "Verdana")
             .print()
             .log()
         ,
-        newScale("judgement", "yes", "no")
+        newScale("Judgement", "yes", "no")
             .settings.radio()
             .settings.labelsPosition("bottom")
             .settings.center()
@@ -103,7 +103,10 @@ Template("sentences.csv", row =>
     )
         // logs additional variables in sentence file (e.g., Fun)
         .log("Id", row.Id)
-        .log("sentence", row.Sentence)
+        .log("Sentence", row.Sentence)
+        .log("Target", row.Target)
+        .log("Condition", row.Condition)
+        .log("Corr", row.Corr)
         //.log("judgement")
     ,
     newTrial("break",
