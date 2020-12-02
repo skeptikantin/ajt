@@ -42,8 +42,7 @@ p.progress-text {
     color: grey;
 }
 p.practice-box {
-    color: blue;
-    height: 1em;
+    height: 0.5em;
     padding-bottom: 1em;
     font-size: small;
     text-align: center;
