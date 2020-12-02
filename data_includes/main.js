@@ -3,7 +3,7 @@
 // https://www.pcibex.net/documentation/
 
 PennController.ResetPrefix(null) // Shorten command names (keep this line here)
-//PennController.DebugOff();
+PennController.DebugOff();
 
 
 // Show the 'intro' trial first, then the training items in random order
@@ -15,7 +15,8 @@ Sequence("intro",
     "instructions",
     "training",
     "intermission",
-    sepWithN("break", randomize("experiment"), 6),
+    sepWithN("break", randomize("experiment"), 14),
+    "debrief",
     SendResults(),
     "goodbye")
 
@@ -185,6 +186,36 @@ Template("main.csv", row =>
     )
 
 ) // defines template for the main experiment
+
+newTrial("debrief",
+
+    newText("<p>That's (almost) it, thank you!</p>")
+        .css("font-size", "1.2em")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newText("<p>What do you think the experiment was about?</p>")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newTextInput("topic", "")
+        .settings.log()
+        .settings.lines(0)
+        .settings.size(400, 100)
+        .css("font-family", "Verdana")
+        .print()
+        .log()
+    ,
+    newText("<p> </p>")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newButton("send", "Send results & proceed to verification link")
+        .size(300)
+        .center()
+        .print()
+        .wait()
+)
 
 SendResults("send") // send results to server before good-bye message
 

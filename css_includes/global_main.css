@@ -29,7 +29,7 @@ div.bar-container {
     border-color: grey;
     background-color: white;
     height: 0.5em;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
 }
 div.bar {
     background-color: grey;
