@@ -25,7 +25,8 @@ p {
 }
 div.bar-container {
     border: 1px solid;
-    border-color: #9ea4b1;
+    /* border-color: #9ea4b1; */
+    border-color: grey;
     background-color: white;
 }
 div.bar {
@@ -36,15 +37,17 @@ p.progress-text {
     margin-top: 0;
     margin-bottom: 2em;
     font-style: italic;
-    font-size: small;
-    font-family: "Open Sans", "Verdana";
+    font-size: 0.7em;
+    font-family: "Verdana";
+    color: grey;
 }
 p.practice-box {
     color: blue;
-    height: 1.5em;
+    height: 1em;
     padding-bottom: 1em;
     font-size: small;
     text-align: center;
+    color: darkgrey;
 }
 span.retry {
     color: blue;

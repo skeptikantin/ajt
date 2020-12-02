@@ -66,8 +66,10 @@ newTrial( "intro" ,
 
 newTrial("instructions" ,
 
-    newText("<p>In the following you will be presented with a number of sentences. Some of them will make more sense than others.</p>" +
-        "<p>Your task is to decide whether it makes sense or not. More specifically you have to judge if the bold word goes with the sentence or not.</p>" +
+    newText("<p>In the following you will be presented with a number of sentences.<br/>"+
+        "Some of them will make more sense than others.</p>" +
+        "<p>Your task is to decide whether it makes sense or not.<br/>" +
+        "More specifically you have to judge if the bold word goes with the sentence or not.</p>" +
         "<p>To make your selection, use the <strong>LEFT</strong> and <strong>RIGHT</strong> arrow keys.<br/>" +
         "Please try to be as accurate and as fast as possible.<br/>" +
         "There will be a training phase with feedback to get you used to the task.</p>")
@@ -173,7 +175,6 @@ Template("main.csv", row =>
 
         newText("<p>Well done, you've earned a little rest if you want.</p>" +
             "Press SPACE to continue.")
-            .css("font-size", "1.5em")
             .css("font-family", "Verdana")
             .center()
             .log()
