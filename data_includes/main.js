@@ -45,9 +45,11 @@ newTrial( "intro" ,
 
 newTrial("instructions" ,
 
-    newText("<p>In this experiment, your task is to read sentences and provide an evaluation.<br/>" +
-        "<b>Please make your choices as quickly and as accurately as possible.<br/>" +
-        "There will be a few practice sentences to familiarize you with the task.</p>")
+    newText("<p>In the following you will be presented with a number of sentences. You will read the sentence and decide<br/>" +
+        "whether it makes sense or not. More specifically you have to judge if the bold word goes with the sentence or not.</p>" +
+        "<p>To make your selection, use the <strong>LEFT</strong> and <strong>RIGHT</strong> arrow keys.<br/>" +
+        "Please try to be as accurate and as fast as possible.<br/>" +
+        "There will be a training phase with feedback to get you used to the task.</p>")
         .css("font-family", "Verdana")
         // .center()
         .print()
