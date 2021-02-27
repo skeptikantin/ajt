@@ -160,7 +160,7 @@ Template("ldd.csv", row =>
             .print()
             .log()
         ,
-        newScale("Score", scale)
+        newScale("Score", 5)
             .button()
             .print()
             .wait("")
