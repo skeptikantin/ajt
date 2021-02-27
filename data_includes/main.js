@@ -68,7 +68,7 @@ newTrial("instructions" ,
         .print()
     ,
     newText("<p>This questionnaire is a study of native speakers' intuitions about<br/>"+
-        "English sentences. Your task is to rate the acceptability of each sentence"+
+        "English sentences. Your task is to rate the acceptability of each sentence<br/>"+
         "on a scale from 1 to 5, where 1 is 'very bad' and 5 is 'fine'.</p>" +
         "We are interested in your initial reaction, but do read each sentence carefully</p>")
         .css("font-family", "Verdana")
@@ -160,9 +160,15 @@ Template("ldd.csv", row =>
             .print()
             .log()
         ,
-        newScale("Score", 5)
-            .button()
+        newText("<p></p>")
             .print()
+        ,
+        newScale("Score", 5)
+            .settings.radio()
+            .settings.labelsPosition("bottom")
+            .settings.center()
+            .print()
+            .settings.log()
             .wait("")
         ,
         newTimer(500)
