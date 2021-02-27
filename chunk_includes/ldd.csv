@@ -1,0 +1,15 @@
+﻿Sentence,Cxn,Typicality
+What do you think the witness will say if they don’t intervene?,wh,prototypical
+What does Claire think the witness will say if they don’t intervene? ,wh,subject
+What would you think the witness will say if they don’t intervene?,wh,auxiliary
+What do you believe the witness will say if they don’t intervene? ,wh,verb
+What do you think that the witness will say if they don’t intervene?,wh,complementizer
+What do you think Jo believes he said at the court hearing? ,wh,long
+What would Claire believe that Jo thinks he said at the court hearing? ,wh,unprototypical
+But you think the witness will say something if they don’t intervene.,de,prototypical
+And Claire thinks the witness will say something if they don’t intervene. ,de,subject
+You would think the witness will say something if they don’t intervene.,de,auxiliary
+So you believe the witness will say something if they don’t intervene. ,de,verb
+So you think that the witness will say something if they don’t intervene.,de,complementizer
+So you think Jo believes he said something at the court hearing. ,de,long
+Claire would believe that Jo thinks he said something at the court hearing. ,de,unprototypical

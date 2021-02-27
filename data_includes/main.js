@@ -13,9 +13,7 @@ PennController.DebugOff();
 //Sequence("intro", "instructions", "training", "intermission", sepWithN( "break" , randomize("experiment") , 4), SendResults(), "goodbye")
 Sequence("intro",
     "instructions",
-    "training",
-    "intermission",
-    sepWithN("break", randomize("experiment"), 14),
+    randomize("experiment"),
     "debrief",
     SendResults(),
     "goodbye")
@@ -69,13 +67,10 @@ newTrial("instructions" ,
         .css("font-size", "1.2em")
         .print()
     ,
-    newText("<p>Your job is to judge 45 sentences, one sentence at a time.<br/>"+
-        "Some of them will make sense, some will make less or no sense at all.</p>"+
-        "<p>Your task is to decide whether the sentence on screen makes sense or not,<br/>" +
-        "that is, if the bold word goes with the sentence or not.</p>" +
-        "<p>Select <strong>YES</strong>, if sentence makes sense, and <strong>NO</strong> if it doesn't.</p>" +
-        "<p>Please try to be both accurate and quick.</p>" +
-        "<p>We will start with 3 training sentences to illustrate the task.</p>")
+    newText("<p>This questionnaire is a study of native speakers' intuitions about<br/>"+
+        "English sentences. Your task is to rate the acceptability of each sentence"+
+        "on a scale from 1 to 5, where 1 is 'very bad' and 5 is 'fine'.</p>" +
+        "We are interested in your initial reaction, but do read each sentence carefully</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -152,7 +147,7 @@ newTrial("intermission",
         .wait()
 )
 
-Template("main.csv", row =>
+Template("ldd.csv", row =>
     newTrial("experiment",
 
         newText("<p> </p>")
@@ -165,12 +160,9 @@ Template("main.csv", row =>
             .print()
             .log()
         ,
-        newScale("Judgement", "yes", "no")
-            .settings.radio()
-            .settings.labelsPosition("bottom")
-            .settings.center()
+        newScale("Score", scale)
+            .button()
             .print()
-            .settings.log()
             .wait("")
         ,
         newTimer(500)
@@ -178,14 +170,10 @@ Template("main.csv", row =>
             .wait()
     )
         // logs additional variables in sentence file (e.g., Fun)
-        .log("Id", row.Id)
-        .log("Group", row.Group)
         .log("Sentence", row.Sentence)
-        .log("Target", row.Target)
-        .log("Condition", row.Condition)
-        .log("Corr", row.Corr)
-        //.log("judgement")
-    ,
+        .log("Cxn", row.Cxn)
+        .log("Typicality", row.Typicality)
+     ,
     newTrial("break",
 
         newText("<p>Well done, you've earned a little rest if you want.</p>" +
@@ -225,21 +213,11 @@ newTrial("debrief",
         .print()
         .log()
     ,
-    newText("<p><strong>Did you read the sentences out lout?</strong></p>")
-        .css("font-family", "Verdana")
-        .print()
-    ,
-    newScale("read", "yes", "sometimes", "no", "can't remember", "rather not say")
-        .css("font-family", "Verdana")
-        .settings.vertical()
-        .print()
-        .log()
-    ,
     newText("<p> </p>")
         .css("font-family", "Verdana")
         .print()
     ,
-    newButton("send", "Send results & proceed to verification link")
+    newButton("send", "Send results")
         .size(300)
         .print()
         .wait()
@@ -253,10 +231,10 @@ newTrial("goodbye",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<strong><a href='https://app.prolific.co/submissions/complete?cc=40B8CB82'>Click here to return to Prolific to validate your participation.</a></strong>")
+    /* newText("<strong><a href='https://app.prolific.co/submissions/complete?cc=40B8CB82'>Click here to return to Prolific to validate your participation.</a></strong>")
         .css("font-size", "1em")
         .print()
-    ,
+    ,*/
     newText("<p><br/>You can contact the corresponding researcher <a href='https://www.sfla.ch/' target='_blank'>here</a> (opens new tab).</p>")
         .css("font-size", ".8em")
         .print()
